@@ -10,5 +10,19 @@ public class Promocion {
         this.descuento = descuento;
     }
 
+    public String getName_promocion() {
+        return name_promocion;
+    }
 
+    public void setName_promocion(String name_promocion) {
+        this.name_promocion = name_promocion;
+    }
+
+    public int getDescuento() {
+        return descuento;
+    }
+
+    public void setDescuento(int descuento) {
+        this.descuento = descuento;
+    }
 }
