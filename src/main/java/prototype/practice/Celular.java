@@ -1,7 +1,5 @@
 package prototype.practice;
 
-import java.util.List;
-
 public class Celular implements ICelular{
     private String modelo;
     private String tamano;
@@ -108,15 +106,15 @@ public class Celular implements ICelular{
     }
 
     public void showInfo(){
-        System.out.println("Modelo celular: "+modelo);
-        System.out.println("Tamaño celular: "+tamano);
-        System.out.println("Número de Cpu celular: "+numeroCpu);
-        System.out.println("Versión android celular: "+versionAndroid);
-        System.out.println("Mega pixeles cámara: "+pixeles);
-        System.out.println("Bluetooth celular: "+bluetooth);
-        System.out.println("Memoria Externa celular: "+memoriasExternas);
-        System.out.println("Capacidad Batería celular: "+consumoBateria);
-        System.out.println("Accesorios celular: "+accesorios);
+        System.out.println("Modelo celular: "+getModelo());
+        System.out.println("Tamaño celular: "+getTamano());
+        System.out.println("Número de Cpu celular: "+getNumeroCpu());
+        System.out.println("Versión android celular: "+getVersionAndroid());
+        System.out.println("Mega pixeles cámara: "+getPixeles());
+        System.out.println("Bluetooth celular: "+getBluetooth());
+        System.out.println("Memoria Externa celular: "+getMemoriasExternas());
+        System.out.println("Capacidad Batería celular: "+getConsumoBateria());
+        System.out.println("Accesorios celular: "+getAccesorios());
         sim.showInfo();
     }
 

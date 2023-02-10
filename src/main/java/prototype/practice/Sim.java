@@ -26,7 +26,7 @@ public class Sim {
     }
 
     public void showInfo(){
-        System.out.println("Empresa telefonica: "+empresaTelefonica);
-        System.out.println("Número telefonico: "+numeroTelefono);
+        System.out.println("Empresa telefonica: "+getEmpresaTelefonica());
+        System.out.println("Número telefonico: "+getNumeroTelefono());
     }
 }
