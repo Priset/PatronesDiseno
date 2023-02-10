@@ -2,7 +2,7 @@ package prototype.practice;
 
 import java.util.List;
 
-public class Celular {
+public class Celular implements ICelular{
     private String modelo;
     private String tamano;
     private int numeroCpu;
@@ -12,6 +12,8 @@ public class Celular {
     private int memoriasExternas;
     private String consumoBateria;
     private String accesorios;
+
+    private Sim sim;
 
     public Celular(String modelo, String tamano, int numeroCpu, String versionAndroid, String pixeles, String bluetooth, int memoriasExternas, String consumoBateria, String accesorios) {
         this.modelo = modelo;
@@ -97,6 +99,14 @@ public class Celular {
         this.accesorios = accesorios;
     }
 
+    public Sim getSim() {
+        return sim;
+    }
+
+    public void setSim(Sim sim) {
+        this.sim = sim;
+    }
+
     public void showInfo(){
         System.out.println("Modelo celular: "+modelo);
         System.out.println("Tamaño celular: "+tamano);
@@ -107,6 +117,18 @@ public class Celular {
         System.out.println("Memoria Externa celular: "+memoriasExternas);
         System.out.println("Capacidad Batería celular: "+consumoBateria);
         System.out.println("Accesorios celular: "+accesorios);
+        sim.showInfo();
+    }
 
+    @Override
+    public Celular clone() {
+
+        Celular clone = new Celular(this.modelo,this.tamano,this.numeroCpu,
+                this.versionAndroid,this.pixeles,this.bluetooth,this.memoriasExternas,
+                this.consumoBateria,this.accesorios);
+
+        clone.setSim(this.getSim());
+
+        return clone;
     }
 }
