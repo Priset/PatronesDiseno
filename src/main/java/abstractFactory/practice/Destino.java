@@ -5,6 +5,12 @@ public class Destino {
     private String ciudad;
     private String aeropuerto;
 
+    public Destino(String pais, String ciudad, String aeropuerto) {
+        this.pais = pais;
+        this.ciudad = ciudad;
+        this.aeropuerto = aeropuerto;
+    }
+
     public String getPais() {
         return pais;
     }

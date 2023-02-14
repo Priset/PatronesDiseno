@@ -1,22 +1,12 @@
 package abstractFactory.practice;
 
 public class PasajeInfantes extends IPasaje{
-    private int numeroVuelo;
-    private Destino destino = new Destino();
-    private Origen origen = new Origen();
-    private Avion avion = new Avion();
-    private Pasajero pasajero = new Pasajero();
-    private int numeroAsiento;
+    private Destino destino = new Destino("","","");
+    private Origen origen = new Origen("","","");
+    private Avion avion = new Avion("","","","");
+    private Pasajero pasajero = new Pasajero("","");
     private String costoEspecial;
     public PasajeInfantes() {}
-
-    public int getNumeroVuelo() {
-        return numeroVuelo;
-    }
-
-    public void setNumeroVuelo(int numeroVuelo) {
-        this.numeroVuelo = numeroVuelo;
-    }
 
     public Destino getDestino() {
         return destino;
@@ -48,14 +38,6 @@ public class PasajeInfantes extends IPasaje{
 
     public void setPasajero(Pasajero pasajero) {
         this.pasajero = pasajero;
-    }
-
-    public int getNumeroAsiento() {
-        return numeroAsiento;
-    }
-
-    public void setNumeroAsiento(int numeroAsiento) {
-        this.numeroAsiento = numeroAsiento;
     }
 
     public String getCostoEspecial() {

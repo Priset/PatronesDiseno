@@ -5,6 +5,12 @@ public class Origen {
     private String ciudad;
     private String aeropuerto;
 
+    public Origen(String pais, String ciudad, String aeropuerto) {
+        this.pais = pais;
+        this.ciudad = ciudad;
+        this.aeropuerto = aeropuerto;
+    }
+
     public String getPais() {
         return pais;
     }

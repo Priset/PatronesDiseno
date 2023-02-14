@@ -6,6 +6,13 @@ public class Avion {
     private String modelo;
     private String numeroAsientos;
 
+    public Avion(String marca, String capacidad, String modelo, String numeroAsientos) {
+        this.marca = marca;
+        this.capacidad = capacidad;
+        this.modelo = modelo;
+        this.numeroAsientos = numeroAsientos;
+    }
+
     public String getMarca() {
         return marca;
     }
