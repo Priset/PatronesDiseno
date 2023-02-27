@@ -2,7 +2,7 @@ package iterator.practice;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
+
 
 public class QuantumIterator implements Iterator{
     private List<Automovil> automovils = new ArrayList<>();
