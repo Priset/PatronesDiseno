@@ -2,8 +2,17 @@ package mediator.practice;
 
 public class Sm extends Persona{
     private String certificaciones;
-    public Sm(ICanalComunicacion canalComunicacion) {
+    public Sm(ICanalComunicacion canalComunicacion,String certificaciones) {
         super(canalComunicacion);
+        this.certificaciones=certificaciones;
+    }
+
+    public String getCertificaciones() {
+        return certificaciones;
+    }
+
+    public void setCertificaciones(String certificaciones) {
+        this.certificaciones = certificaciones;
     }
 
     @Override

@@ -2,8 +2,17 @@ package mediator.practice;
 
 public class Dev extends Persona{
     private String lenguaje;
-    public Dev(ICanalComunicacion canalComunicacion) {
+    public Dev(ICanalComunicacion canalComunicacion, String lenguaje) {
         super(canalComunicacion);
+        this.lenguaje=lenguaje;
+    }
+
+    public String getLenguaje() {
+        return lenguaje;
+    }
+
+    public void setLenguaje(String lenguaje) {
+        this.lenguaje = lenguaje;
     }
 
     @Override

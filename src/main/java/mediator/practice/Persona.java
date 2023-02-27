@@ -4,6 +4,7 @@ public abstract class Persona {
     protected ICanalComunicacion canalComunicacion;
     private String name;
     private String ci;
+    private String cargo;
     public Persona(ICanalComunicacion canalComunicacion){
         this.canalComunicacion=canalComunicacion;
     }
@@ -26,10 +27,20 @@ public abstract class Persona {
         return this;
     }
 
+    public String getCargo() {
+        return cargo;
+    }
+
+    public Persona setCargo(String cargo) {
+        this.cargo = cargo;
+        return this;
+    }
+
     public void showPersona(){
         System.out.println("***********PERSONA**********");
-        System.out.println("Nombre: "+name);
-        System.out.println("CI: "+ci);
+        System.out.println("Nombre: "+getName());
+        System.out.println("CI: "+getCi());
+        System.out.println("Cargo: "+getCargo());
     }
 
     public abstract void enviar(String msg);
