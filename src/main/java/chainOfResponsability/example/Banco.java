@@ -1,7 +1,5 @@
 package chainOfResponsability.example;
 
-
-
 public class Banco implements IHandler {
     private IHandler next;
 
