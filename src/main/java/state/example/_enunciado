@@ -16,7 +16,7 @@ Contexto  ---> Computadora
 IState  ---> IStateComputadora
 ConcreteState ---> PrendidoMinando / PrendidoPrograma / Apagado
 
-Class targetaVideo (capcidadTotal,capacidad utilizada,des)
+Class tarjetaVideo (capcidadTotal,capacidad utilizada,des)
 Class memoriaRam (capacidad Total, capacidad utiliza,des)
 
 

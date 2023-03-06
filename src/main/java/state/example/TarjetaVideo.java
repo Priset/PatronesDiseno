@@ -1,13 +1,13 @@
 package state.example;
 
-public class TargetaVideo {
+public class TarjetaVideo {
 
     private int percentageUse;
     private String total;
     private String description;
 
-    public TargetaVideo(){}
-    public TargetaVideo(int percentageUse, String total, String description) {
+    public TarjetaVideo(){}
+    public TarjetaVideo(int percentageUse, String total, String description) {
         this.percentageUse = percentageUse;
         this.total = total;
         this.description = description;

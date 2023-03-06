@@ -2,14 +2,14 @@ package state.example;
 
 public class Computadora {
     private MemoryRam memoryRam;
-    private TargetaVideo targetaVideo;
+    private TarjetaVideo tarjetaVideo;
     // IState
     private IStateComputer stateComputer;
 
 
-    public Computadora(MemoryRam memoryRam, TargetaVideo targetaVideo) {
+    public Computadora(MemoryRam memoryRam, TarjetaVideo tarjetaVideo) {
         this.memoryRam = memoryRam;
-        this.targetaVideo = targetaVideo;
+        this.tarjetaVideo = tarjetaVideo;
     }
 
     public MemoryRam getMemoryRam() {
@@ -20,12 +20,12 @@ public class Computadora {
         this.memoryRam = memoryRam;
     }
 
-    public TargetaVideo getTargetaVideo() {
-        return targetaVideo;
+    public TarjetaVideo getTargetaVideo() {
+        return tarjetaVideo;
     }
 
-    public void setTargetaVideo(TargetaVideo targetaVideo) {
-        this.targetaVideo = targetaVideo;
+    public void setTargetaVideo(TarjetaVideo tarjetaVideo) {
+        this.tarjetaVideo = tarjetaVideo;
     }
 
     public IStateComputer getStateComputer() {
