@@ -1,7 +1,6 @@
 package composite.example;
 
 public abstract class Component {
-
     private String titulo;
     private String descripcion;
     private String prioridad;
